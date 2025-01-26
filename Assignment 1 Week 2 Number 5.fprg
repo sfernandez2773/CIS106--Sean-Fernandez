@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Assignment 1 Week 2 Number 5"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-26 03:13:04 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDEtMjY7MDI6NTg6MjYgUE07MjQ4NA=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDEtMjY7MDM6MTM6MDQgUE07MTsyNTgw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Price" type="Real" array="False" size=""/>
+            <declare name="Discount" type="Real" array="False" size=""/>
+            <declare name="Amount" type="Real" array="False" size=""/>
+            <declare name="Final" type="Real" array="False" size=""/>
+            <input variable="Price"/>
+            <input variable="Discount"/>
+            <input variable="Amount"/>
+            <assign variable="Amount" expression="Price * Discount"/>
+            <assign variable="Final" expression="Price - amount"/>
+            <output expression="&quot;Discount total is $.&quot; &amp; amount" newline="True"/>
+            <output expression="&quot;Total afterwards with discounted price is $.&quot; &amp;Final" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

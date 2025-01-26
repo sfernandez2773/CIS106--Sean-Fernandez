@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Assignment 1 Week 2 Number 04"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-26 02:52:37 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDEtMjY7MDI6NDY6MDMgUE07MjQ3Ng=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDEtMjY7MDI6NTI6MzcgUE07MTsyNTg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LastName" type="String" array="False" size=""/>
+            <declare name="Credits" type="Integer" array="False" size=""/>
+            <declare name="Tuition" type="Real" array="False" size=""/>
+            <input variable="LastName"/>
+            <input variable="Credits"/>
+            <assign variable="Tuition" expression="credits * 250 + 100"/>
+            <output expression="&quot;Your tuition total is $.&quot; &amp;Tuition" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
