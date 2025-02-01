@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Assignment Set 2 PS1P2"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-01 04:49:32 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMDE7MDQ6NDI6MjMgUE07MjQ3MA=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMDE7MDQ6NDk6MzIgUE07MjsyNTg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LastName" type="String" array="False" size=""/>
+            <declare name="MidTerm" type="Real" array="False" size=""/>
+            <declare name="FinalExam" type="Real" array="False" size=""/>
+            <declare name="ExamTotal" type="Real" array="False" size=""/>
+            <input variable="LastName"/>
+            <input variable="MidTerm"/>
+            <input variable="FinalExam"/>
+            <assign variable="ExamTotal" expression="(MidTerm * 0.4) + (FinalExam * 0.6)"/>
+            <output expression="&quot;Your Exam Total scores for the class.&quot; &amp;ExamTotal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

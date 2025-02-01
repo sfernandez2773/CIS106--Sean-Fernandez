@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Assignment Set 2 PS2P3"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 03:58:39 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDEtMjk7MDk6MzY6MTEgUE07MjQ4NA=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDEtMzA7MDM6NTg6MzkgUE07NDsyNTk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Friend1" type="String" array="False" size=""/>
+            <declare name="Friend2" type="String" array="False" size=""/>
+            <declare name="Friend3" type="String" array="False" size=""/>
+            <declare name="Cost" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <input variable="Friend1"/>
+            <input variable="Friend2"/>
+            <input variable="Friend3"/>
+            <input variable="Cost"/>
+            <assign variable="Total" expression="Cost /3"/>
+            <output expression="&quot;Your Total price is $    &quot; &amp;Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

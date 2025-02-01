@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Assignment Set 2 PS1P5"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 04:26:06 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDEtMzA7MDQ6MDA6NTEgUE07MjQ2Ng=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDEtMzA7MDQ6MjY6MDYgUE07MTsyNTgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Circle" type="Real" array="False" size=""/>
+            <declare name="Area" type="Real" array="False" size=""/>
+            <declare name="Perimeters" type="Real" array="False" size=""/>
+            <declare name="PerimetersTotal" type="Real" array="False" size=""/>
+            <input variable="Circle"/>
+            <assign variable="Area" expression="3.174 * Circle ^2"/>
+            <assign variable="PerimetersTotal" expression="3.174^ 2 * Circle"/>
+            <output expression="&quot;Total area of circle&quot; &amp; Area" newline="True"/>
+            <output expression="&quot;Total of perimeters of a circle&quot; &amp; PerimetersTotal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

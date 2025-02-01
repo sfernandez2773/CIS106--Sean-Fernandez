@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Assignment Set 2 PS2P1"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 04:00:40 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDEtMjk7MDk6MDM6MTUgUE07MjQ4Mg=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDEtMzA7MDQ6MDA6NDAgUE07MjsyNTcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NameOfStock" type="String" array="False" size=""/>
+            <declare name="NumberShares" type="Real" array="False" size=""/>
+            <declare name="Cost" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <input variable="NameOfStock"/>
+            <input variable="NumberShares"/>
+            <input variable="NumberShares"/>
+            <input variable="Cost"/>
+            <assign variable="Total" expression="NumberShares * Cost"/>
+            <output expression="&quot;Total amount invested shares   &quot; &amp; Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

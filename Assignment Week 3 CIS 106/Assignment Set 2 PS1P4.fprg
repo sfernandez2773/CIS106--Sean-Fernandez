@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Assignment Set 2 PS2P4"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-30 03:57:25 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDEtMjk7MTA6MDY6MzMgUE07MjQ3Nw=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDEtMzA7MDM6NTc6MjUgUE07MjsyNTg3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Make" type="String" array="False" size=""/>
+            <declare name="Model" type="String" array="False" size=""/>
+            <declare name="MsrpAmount" type="Real" array="False" size=""/>
+            <declare name="Discount" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <input variable="Make"/>
+            <input variable="Model"/>
+            <input variable="MsrpAmount"/>
+            <input variable="Discount"/>
+            <assign variable="Total" expression="MsrpAmount / Discount"/>
+            <output expression="&quot;Total amount after discount $    &quot; &amp; Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
