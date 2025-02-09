@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS1PS2"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-06 09:23:59 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMDY7MDk6MTA6NTEgUE07MjQ3Ng=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMDY7MDk6MjM6NTkgUE07MTsyNTk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PurchasePrice" type="Real" array="False" size=""/>
+            <declare name="CurrentStockPrice" type="Real" array="False" size=""/>
+            <declare name="Quantity" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <input variable="PurchasePrice"/>
+            <input variable="CurrentStockPrice"/>
+            <input variable="Quantity"/>
+            <assign variable="Total" expression="(CurrentStockPrice - PurchasePrice) * Quantity"/>
+            <output expression="&quot;Total amount $&quot; &amp;  Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

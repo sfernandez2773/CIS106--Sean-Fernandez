@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS4PS2"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-09 05:15:22 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMDk7MDU6MTI6MDUgUE07MjQ3Ng=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMDk7MDU6MTU6MjIgUE07MjsyNTg3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="FirstName" type="String" array="False" size=""/>
+            <declare name="NumberSteps" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <input variable="FirstName"/>
+            <input variable="NumberSteps"/>
+            <assign variable="Total" expression="NumberSteps * 0.25"/>
+            <output expression="&quot;Total lost calories&quot;    &amp; Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

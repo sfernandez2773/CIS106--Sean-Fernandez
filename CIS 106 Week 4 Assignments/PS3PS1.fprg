@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS1PS3"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-09 05:02:54 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMDY7MDk6MjY6MzEgUE07MjQ4MQ=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMDk7MDU6MDI6NTQgUE07MzsyNTg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="MealTotal" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <declare name="Tip" type="Real" array="False" size=""/>
+            <input variable="MealTotal"/>
+            <assign variable="Tip" expression="MealTotal*0.15"/>
+            <assign variable="Tip" expression="MealTotal*0.18"/>
+            <assign variable="Tip" expression="MealTotal*0.20"/>
+            <assign variable="Total" expression="MealTotal + Tip"/>
+            <output expression="&quot;MealTotal $&quot; &amp; (Total * 0.15)" newline="True"/>
+            <output expression="&quot;MealTotal $&quot; &amp; (Total *0.18)" newline="True"/>
+            <output expression="&quot;MealTotal $&quot; &amp; (Total * 0.20)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

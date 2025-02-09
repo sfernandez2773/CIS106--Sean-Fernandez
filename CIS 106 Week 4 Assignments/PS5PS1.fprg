@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS5PS1"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-09 05:25:33 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMDk7MDU6MTU6NDEgUE07MjQ3OQ=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMDk7MDU6MjU6MzMgUE07MTsyNTg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="FixedCost" type="Real" array="False" size=""/>
+            <declare name="PricePerShare" type="Real" array="False" size=""/>
+            <declare name="CostPerUnit" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <input variable="FixedCost"/>
+            <input variable="PricePerShare"/>
+            <input variable="CostPerUnit"/>
+            <assign variable="Total" expression="FixedCost / (PricePerShare - CostPerUnit)"/>
+            <output expression="&quot;Total Cost $&quot; &amp; Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
