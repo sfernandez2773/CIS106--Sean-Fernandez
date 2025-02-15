@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Basic_IF_Week5_PS1PS1"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-12 08:10:52 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMTI7MDM6MjU6MDEgUE07MjQ2OA=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMTI7MDg6MTA6NTIgUE07MTsyNTgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Quantity" type="Real" array="False" size=""/>
+            <declare name="UnitPrice" type="Real" array="False" size=""/>
+            <declare name="ExtendedPrice" type="Real" array="False" size=""/>
+            <declare name="Tax" type="Real" array="False" size=""/>
+            <declare name="Up" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <input variable="Quantity"/>
+            <if expression="Quantity &gt;= 1000">
+                <then>
+                    <assign variable="Up" expression="3.00"/>
+                </then>
+                <else>
+                    <assign variable="Up" expression="5.00"/>
+                </else>
+            </if>
+            <assign variable="ExtendedPrice" expression="Quantity * up"/>
+            <assign variable="Tax" expression="ExtendedPrice * 0.07"/>
+            <assign variable="Total" expression="ExtendedPrice + Tax"/>
+            <output expression="&quot;Quantity amount&quot; &amp; Quantity" newline="True"/>
+            <output expression="&quot;Unit Pricing $&quot; &amp;up" newline="True"/>
+            <output expression="&quot;Extended Pricing is $&quot; &amp;ExtendedPrice" newline="True"/>
+            <output expression="&quot;Tax is the $&quot; &amp; Tax" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Basic_IF_Week5_PS2PS1"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-15 05:00:55 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMTI7MDg6MTE6MTAgUE07MjQ2OA=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMTU7MDU6MDA6NTUgUE07MjsyNTg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Item" type="Real" array="False" size=""/>
+            <declare name="Quantity" type="Real" array="False" size=""/>
+            <declare name="UnitPrice" type="Real" array="False" size=""/>
+            <declare name="ExtendedPrice" type="Real" array="False" size=""/>
+            <declare name="A" type="Real" array="False" size=""/>
+            <declare name="B" type="Real" array="False" size=""/>
+            <input variable="Item"/>
+            <input variable="Quantity"/>
+            <input variable="UnitPrice"/>
+            <if expression="UnitPrice &gt; 20">
+                <then>
+                    <assign variable="UnitPrice" expression="20.00"/>
+                </then>
+                <else>
+                    <assign variable="UnitPrice" expression="10.00"/>
+                </else>
+            </if>
+            <assign variable="ExtendedPrice" expression="Quantity * UnitPrice"/>
+            <output expression="&quot;Item&quot; &amp;Item" newline="True"/>
+            <output expression="&quot;Unit Price $&quot; &amp; UnitPrice" newline="True"/>
+            <output expression="&quot;Extended Price costs $&quot; &amp; ExtendedPrice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

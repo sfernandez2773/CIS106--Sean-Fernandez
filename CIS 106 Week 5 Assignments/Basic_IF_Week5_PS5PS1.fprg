@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Basic_IF_Week5_PS5PS1"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-13 11:31:42 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMTM7MTE6MTc6NTcgUE07MjQ4MA=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMTM7MTE6MzE6NDIgUE07MTsyNTc4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="UserName" type="Real" array="False" size=""/>
+            <declare name="Dependents" type="Real" array="False" size=""/>
+            <declare name="GrossIncome" type="Real" array="False" size=""/>
+            <input variable="UserName"/>
+            <input variable="Dependents"/>
+            <input variable="GrossIncome"/>
+            <if expression="">
+                <then/>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

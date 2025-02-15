@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Basic_IF_Week5_PS4PS1"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-13 11:17:29 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMTM7MTA6NDM6NTggUE07MjQ3OQ=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMTM7MTE6MTc6MjkgUE07MjsyNTg4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Name" type="String" array="False" size=""/>
+            <declare name="Cost" type="Real" array="False" size=""/>
+            <declare name="Warranty" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <input variable="Name"/>
+            <input variable="Cost"/>
+            <if expression="Cost&gt;1000">
+                <then>
+                    <assign variable="Warranty" expression="Cost * 0.10"/>
+                </then>
+                <else>
+                    <assign variable="Warranty" expression="Cost * 0.5"/>
+                </else>
+            </if>
+            <assign variable="Total" expression="Cost + Warranty"/>
+            <output expression="&quot;Name of appliance&quot; &amp; Name" newline="True"/>
+            <output expression="&quot;Total cost of appliance $&quot; &amp; Cost" newline="True"/>
+            <output expression="&quot;Amount of warranty $&quot; &amp; Warranty" newline="True"/>
+            <output expression="&quot;Total cost combined with appliance and warranty $&quot; &amp; Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Basic_IF_Week5_PS3PS1"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-15 05:11:43 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMTI7MDg6NTA6MTQgUE07MjQ3NQ=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMTU7MDU6MTE6NDMgUE07NDsyNTg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Books" type="Real" array="False" size=""/>
+            <declare name="OrderTotal" type="Real" array="False" size=""/>
+            <declare name="ShippingCharge" type="Real" array="False" size=""/>
+            <declare name="FreeShipping" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <input variable="Books"/>
+            <input variable="OrderTotal"/>
+            <if expression="50 &lt; OrderTotal">
+                <then>
+                    <output expression="&quot; Has free shipping included $&quot;  &amp; OrderTotal" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot; no free shipping  $ &quot; &amp; OrderTotal +25" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;Total books ordered&quot;  &amp; Books" newline="True"/>
+            <output expression="&quot;Total books $&quot;  &amp; OrderTotal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
