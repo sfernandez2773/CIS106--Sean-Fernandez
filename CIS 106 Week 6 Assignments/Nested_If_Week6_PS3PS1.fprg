@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Nested_If_Week6_PS3PS1"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-21 08:31:59 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMjA7MDg6MzY6MzcgUE07MjQ4Mw=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMjE7MDg6MzE6NTkgUE07MzsyNTkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Principle" type="Real" array="False" size=""/>
+            <declare name="Years" type="Real" array="False" size=""/>
+            <declare name="Interest" type="Real" array="False" size=""/>
+            <declare name="Amount" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <input variable="Principle"/>
+            <input variable="Years"/>
+            <if expression="Principle &gt; 100000">
+                <then>
+                    <assign variable="Interest" expression="0.06"/>
+                    <assign variable="Years" expression="5"/>
+                </then>
+                <else>
+                    <if expression="Principle &gt; 50000">
+                        <then>
+                            <assign variable="Interest" expression="0.05"/>
+                            <assign variable="Years" expression="10"/>
+                        </then>
+                        <else>
+                            <if expression="Principle &gt; 50000">
+                                <then>
+                                    <assign variable="Interest" expression="0.04"/>
+                                    <assign variable="Years" expression="5"/>
+                                </then>
+                                <else>
+                                    <assign variable="Years" expression="0.02"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="Total" expression="Principle * Interest"/>
+            <output expression="&quot;Principle chosen $&quot; &amp; Principle" newline="True"/>
+            <output expression="&quot;The Interest %&quot; &amp; Interest" newline="True"/>
+            <output expression="&quot;The interest amount $&quot; &amp; Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

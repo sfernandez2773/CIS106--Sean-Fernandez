@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Nested_If_Week6_PS5PS1"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-21 08:23:38 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMjE7MDg6MDk6MzQgUE07MjQ4MQ=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMjE7MDg6MjM6MzggUE07MjsyNTkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LastName" type="String" array="False" size=""/>
+            <declare name="Salary" type="Real" array="False" size=""/>
+            <declare name="JobLevel" type="Real" array="False" size=""/>
+            <declare name="Bonus" type="Real" array="False" size=""/>
+            <input variable="LastName"/>
+            <input variable="JobLevel"/>
+            <if expression="10 &lt; JobLevel">
+                <then>
+                    <assign variable="Bonus" expression="25"/>
+                </then>
+                <else>
+                    <if expression="JobLevel&gt;5">
+                        <then>
+                            <assign variable="Bonus" expression="20"/>
+                        </then>
+                        <else>
+                            <assign variable="Bonus" expression="10"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Last name of employee&quot; &amp;LastName" newline="True"/>
+            <output expression="&quot;Job level currently &quot; &amp; JobLevel" newline="True"/>
+            <output expression="&quot;The employees' bonus %  &quot; &amp;Bonus" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

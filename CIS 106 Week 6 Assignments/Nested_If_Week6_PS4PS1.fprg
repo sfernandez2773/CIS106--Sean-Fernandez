@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Nested_If_Week6_PS4PS1"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-22 09:16:59 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMjA7MDk6MjI6MzkgUE07MjQ4MQ=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMjI7MDk6MTY6NTkgUE07MzsyNTk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Ticket" type="Real" array="False" size=""/>
+            <declare name="Price" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <input variable="Ticket"/>
+            <if expression="Ticket&gt;=25">
+                <then>
+                    <assign variable="Price" expression="50"/>
+                </then>
+                <else>
+                    <if expression="Ticket &gt;= 10">
+                        <then>
+                            <assign variable="Price" expression="60"/>
+                        </then>
+                        <else>
+                            <if expression="Ticket &gt;= 5">
+                                <then>
+                                    <assign variable="Price" expression="70"/>
+                                </then>
+                                <else>
+                                    <assign variable="Price" expression="75"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="Total" expression="Ticket * Price"/>
+            <output expression="&quot;Amount of tickets&quot; &amp; Ticket" newline="True"/>
+            <output expression="&quot;Total amount of tickets bought $&quot; &amp; Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

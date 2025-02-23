@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Nested_If_Week6_PS2PS1"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-20 08:35:59 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMjA7MDc6NDg6MTUgUE07MjQ4MQ=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDItMjA7MDg6MzU6NTkgUE07MTsyNTk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Part" type="Real" array="False" size=""/>
+            <declare name="Quantity" type="Real" array="False" size=""/>
+            <declare name="UnitCost" type="Real" array="False" size=""/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <input variable="Part"/>
+            <input variable="Quantity"/>
+            <if expression="10 == 55">
+                <then>
+                    <assign variable="Part" expression="1.00"/>
+                </then>
+                <else>
+                    <if expression="Part == 99">
+                        <then>
+                            <assign variable="Part" expression="2.00"/>
+                        </then>
+                        <else>
+                            <if expression="80 == 70">
+                                <then>
+                                    <assign variable="Part" expression="3.00"/>
+                                </then>
+                                <else>
+                                    <assign variable="Part" expression="5.00"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;The Part numbers&quot; &amp; Part" newline="True"/>
+            <output expression="&quot;The cost per unit $&quot; &amp; UnitCost" newline="True"/>
+            <output expression="&quot;The total amount $&quot; &amp; Total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
