@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS3PS1_Week7"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-07 09:45:10 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDMtMDU7MDk6Mzc6MTAgUE07MjQ4MA=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDMtMDc7MDk6NDU6MTAgUE07MzsyNTkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Answers" type="String" array="False" size=""/>
+            <declare name="LastName" type="String" array="False" size=""/>
+            <declare name="Avg" type="Real" array="False" size=""/>
+            <declare name="Exam1" type="Real" array="False" size=""/>
+            <declare name="Exam2" type="Real" array="False" size=""/>
+            <output expression="&quot;Do you want to find your exam average (Yes or No)&quot;" newline="True"/>
+            <input variable="Answers"/>
+            <while expression="Answers = &quot;Yes&quot;">
+                <output expression="&quot;Enter the student's last name&quot;" newline="True"/>
+                <input variable="LastName"/>
+                <output expression="&quot;Enter first exam&quot;" newline="True"/>
+                <input variable="Exam1"/>
+                <output expression="&quot;Enter 2nd exam&quot;" newline="True"/>
+                <input variable="Exam2"/>
+                <assign variable="Avg" expression="(Exam1 + Exam2) / 2"/>
+                <output expression="&quot;Student's last name&quot; &amp;Lastname &amp; &quot;The avg exam scores&quot; &amp;Avg" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
