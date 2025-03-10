@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS3PS1"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-09 11:53:17 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDMtMDk7MTA6MzQ6NDEgUE07MjQ3Nw=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDMtMDk7MTE6NTM6MTcgUE07NDsyNTkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Answers" type="String" array="False" size=""/>
+            <declare name="LastName" type="String" array="False" size=""/>
+            <declare name="Salary" type="Real" array="False" size=""/>
+            <declare name="BonusTotal" type="Real" array="False" size=""/>
+            <declare name="Bonus" type="Real" array="False" size=""/>
+            <output expression="&quot;Do you want begin? (Yes or No)&quot;" newline="True"/>
+            <input variable="Answers"/>
+            <output expression="&quot;Enter the employee's last name&quot;" newline="True"/>
+            <input variable="LastName"/>
+            <output expression="&quot;Enter the Employees' Salary&quot;" newline="True"/>
+            <input variable="Salary"/>
+            <input variable="Bonus"/>
+            <while expression="Salary&lt;= 100000">
+                <assign variable="BonusTotal" expression="Salary * Bonus"/>
+                <assign variable="Bonus" expression=".20"/>
+                <output expression="&quot;Total amount with bonus included&quot;" newline="True"/>
+                <while expression="Salary &lt;= 50000">
+                    <assign variable="BonusTotal" expression="Bonus * Salary"/>
+                    <assign variable="Bonus" expression=".15"/>
+                    <output expression="&quot;Total amount with bonus included&quot;" newline="True"/>
+                </while>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

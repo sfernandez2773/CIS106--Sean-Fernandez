@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PS5PS1"/>
+        <attribute name="authors" value="ramon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-09 10:34:36 PM"/>
+        <attribute name="created" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDMtMDk7MDk6MTM6NDkgUE07MjQ5MA=="/>
+        <attribute name="edited" value="cmFtb247TFVOQUxVTkEyOzIwMjUtMDMtMDk7MTA6MzQ6MzYgUE07MzsyNTkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="LastName" type="String" array="False" size=""/>
+            <declare name="DistrictCode" type="Real" array="False" size=""/>
+            <declare name="Credits" type="Real" array="False" size=""/>
+            <declare name="Tuition" type="Real" array="False" size=""/>
+            <declare name="CostPerCredit" type="Real" array="False" size=""/>
+            <declare name="I" type="Real" array="False" size=""/>
+            <declare name="O" type="Real" array="False" size=""/>
+            <assign variable="I" expression="250"/>
+            <assign variable="O" expression="500"/>
+            <output expression="&quot;Enter the student's last name&quot;" newline="True"/>
+            <input variable="LastName"/>
+            <output expression="&quot;Enter the total credit hours&quot;" newline="True"/>
+            <input variable="Credits"/>
+            <input variable="CostPerCredit"/>
+            <assign variable="Tuition" expression="Credits * CostPerCredit"/>
+            <while expression="Tuition &gt;= 250">
+                <assign variable="I" expression="250"/>
+                <output expression="&quot;Student is qualified for in-state tuition fee&quot;" newline="True"/>
+            </while>
+            <assign variable="O" expression="500"/>
+            <output expression="&quot;Student is qualified for out of state tuition&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
